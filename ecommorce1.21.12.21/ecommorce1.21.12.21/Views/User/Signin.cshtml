@@ -1,0 +1,52 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+
+<div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card card-theme">
+                    <div class="card-header">Kaydol</div>
+                    <div class="card-body">
+                        <form role="form" method="POST" action="#" class="needs-validation was-validated" novalidate>
+                            <div class="row mb-3 has-error">
+                                <label for="name" class="col-md-4 col-form-label text-end">Kullanıcı Adı</label>
+                                <div class="col-md-6">
+                                    <input id="name" type="text" class="form-control" name="name" value="" required autofocus>
+                                    <span class="invalid-feedback">
+                                        <strong>Kullanıcı adı boş bırakılamaz</strong>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="email" class="col-md-4 col-form-label text-end">Email</label>
+                                <div class="col-md-6">
+                                    <input id="email" type="email" class="form-control" name="email" value="" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="password" class="col-md-4 col-form-label text-end">Şifre</label>
+                                <div class="col-md-6">
+                                    <input id="password" type="password" class="form-control" name="password" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="password-confirm" class="col-md-4 col-form-label text-end">Şifre (Tekrar)</label>
+                                <div class="col-md-6">
+                                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="btn btn-primary">
+                                        Kaydol
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

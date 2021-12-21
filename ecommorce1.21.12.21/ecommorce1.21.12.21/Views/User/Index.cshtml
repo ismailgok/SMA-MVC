@@ -1,0 +1,97 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+
+ 
+
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card card-theme">
+                    <div class="card-header">Şifremi Sıfırla</div>
+                    <div class="card-body">
+                        <form role="form" method="POST" action="#">
+                            <div class="row mb-3">
+                                <label for="email" class="col-md-4 col-form-label text-end">Email</label>
+                                <div class="col-md-6">
+                                    <input id="email" type="email" class="form-control" name="email" value="" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="btn btn-primary">
+                                        Şifre Sıfırlama Emaili Gönder
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card card-theme">
+                    <div class="card-header">Şifremi Sıfırla</div>
+                    <div class="card-body">
+                        <form role="form" method="POST" action="#">
+                            <div class="row mb-3">
+                                <label for="email" class="col-md-4 col-form-label text-end">Email</label>
+                                <div class="col-md-6">
+                                    <input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="sifre" class="col-md-4 col-form-label text-end">Şifre</label>
+                                <div class="col-md-6">
+                                    <input id="sifre" type="password" class="form-control" name="sifre" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="sifre-confirm" class="col-md-4 col-form-label text-end">Şifre (Tekrar)</label>
+                                <div class="col-md-6">
+                                    <input id="sifre-confirm" type="password" class="form-control" name="sifre_confirmation" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="btn btn-primary">
+                                        Sıfırla
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>

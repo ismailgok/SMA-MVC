@@ -1,0 +1,50 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card card-theme">
+                    <div class="card-header">Oturum Aç</div>
+                    <div class="card-body">
+                        <form role="form" method="POST" action="#">
+                            <div class="row mb-3">
+                                <label for="email" class="col-md-4 col-form-label text-end">Email</label>
+                                <div class="col-md-6">
+                                    <input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="sifre" class="col-md-4 col-form-label text-end">Şifre</label>
+                                <div class="col-md-6">
+                                    <input id="sifre" type="password" class="form-control" name="sifre" required>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-md-3 offset-md-4">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="benihatirla" checked> Beni hatırla
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <a class="btn btn-link" href="{{ route('kullanici.sifre_form') }}">
+                                        Şifremi Unuttum
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8 offset-md-4">
+                                    <button type="submit" class="btn btn-primary">
+                                        Giriş yap
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

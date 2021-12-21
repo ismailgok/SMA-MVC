@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ecommorce1.21.12.21/1.0.0": {
+        "runtime": {
+          "ecommorce1.21.12.21.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ecommorce1.21.12.21/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

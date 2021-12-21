@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laravel Eticaret</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,800">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body id="commerce">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card card-theme">
+                    <div class="card-header">Oturum Aç</div>
+                    <div class="card-body">
+                        <form role="form" method="POST" action="#">
+                            <div class="row mb-3">
+                                <label for="email" class="col-md-4 col-form-label text-end">Email</label>
+                                <div class="col-md-6">
+                                    <input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="sifre" class="col-md-4 col-form-label text-end">Şifre</label>
+                                <div class="col-md-6">
+                                    <input id="sifre" type="password" class="form-control" name="sifre" required>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-md-3 offset-md-4">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="benihatirla" checked> Beni hatırla
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <a class="btn btn-link" href="{{ route('kullanici.sifre_form') }}">
+                                        Şifremi Unuttum
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8 offset-md-4">
+                                    <button type="submit" class="btn btn-primary">
+                                        Giriş yap
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card card-theme">
+                    <div class="card-header">Kaydol</div>
+                    <div class="card-body">
+                        <form role="form" method="POST" action="#" class="needs-validation was-validated" novalidate>
+                            <div class="row mb-3 has-error">
+                                <label for="name" class="col-md-4 col-form-label text-end">Kullanıcı Adı</label>
+                                <div class="col-md-6">
+                                    <input id="name" type="text" class="form-control" name="name" value="" required autofocus>
+                                    <span class="invalid-feedback">
+                                        <strong>Kullanıcı adı boş bırakılamaz</strong>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="email" class="col-md-4 col-form-label text-end">Email</label>
+                                <div class="col-md-6">
+                                    <input id="email" type="email" class="form-control" name="email" value="" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="password" class="col-md-4 col-form-label text-end">Şifre</label>
+                                <div class="col-md-6">
+                                    <input id="password" type="password" class="form-control" name="password" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="password-confirm" class="col-md-4 col-form-label text-end">Şifre (Tekrar)</label>
+                                <div class="col-md-6">
+                                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="btn btn-primary">
+                                        Kaydol
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card card-theme">
+                    <div class="card-header">Şifremi Sıfırla</div>
+                    <div class="card-body">
+                        <form role="form" method="POST" action="#">
+                            <div class="row mb-3">
+                                <label for="email" class="col-md-4 col-form-label text-end">Email</label>
+                                <div class="col-md-6">
+                                    <input id="email" type="email" class="form-control" name="email" value="" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="btn btn-primary">
+                                        Şifre Sıfırlama Emaili Gönder
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card card-theme">
+                    <div class="card-header">Şifremi Sıfırla</div>
+                    <div class="card-body">
+                        <form role="form" method="POST" action="#">
+                            <div class="row mb-3">
+                                <label for="email" class="col-md-4 col-form-label text-end">Email</label>
+                                <div class="col-md-6">
+                                    <input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="sifre" class="col-md-4 col-form-label text-end">Şifre</label>
+                                <div class="col-md-6">
+                                    <input id="sifre" type="password" class="form-control" name="sifre" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="sifre-confirm" class="col-md-4 col-form-label text-end">Şifre (Tekrar)</label>
+                                <div class="col-md-6">
+                                    <input id="sifre-confirm" type="password" class="form-control" name="sifre_confirmation" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="btn btn-primary">
+                                        Sıfırla
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+</body>
+</html>

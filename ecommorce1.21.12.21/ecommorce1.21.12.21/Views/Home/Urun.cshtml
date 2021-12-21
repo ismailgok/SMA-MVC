@@ -1,0 +1,50 @@
+﻿@{
+    Layout = "_Layout";
+} 
+
+<div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+                <li class="breadcrumb-item"><a href="#">Kategori</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Kategori</li>
+            </ol>
+        </nav>
+        <div class="bg-content">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="https://picsum.photos/400/400?1">
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="#"><img src="https://picsum.photos/60/60?/2" class="img-thumbnail"></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#"><img src="https://picsum.photos/60/60?/3" class="img-thumbnail"></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#"><img src="https://picsum.photos/60/60?/4" class="img-thumbnail"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <h1>Ürün adı</h1>
+                    <p class="price">129 ₺</p>
+                    <p><a href="#" class="btn btn-theme">Sepete Ekle</a></p>
+                </div>
+            </div>
+
+            <ul class="nav nav-tabs mt-5" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" aria-current="page" data-bs-toggle="tab" data-bs-target="#t1">Ürün Açıklaması</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#t2">Yorumlar</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="t1">t1</div>
+                <div role="tabpanel" class="tab-pane" id="t2">t2</div>
+            </div>
+        </div>
+    </div>
